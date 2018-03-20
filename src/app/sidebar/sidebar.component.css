@@ -1,0 +1,17 @@
+.sidebarContiner
+{
+    background: #252b3a;
+}
+
+.navgitionbar
+{
+    margin-top: 64px;
+    margin-left: -15px;
+    color: white;
+}
+.navgitionbar ul{
+    list-style: none
+}
+.navgitionbar ul li {
+    padding-bottom: 20px;
+}

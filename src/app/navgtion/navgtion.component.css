@@ -1,0 +1,40 @@
+
+.logoBackground
+{
+    background-image: url("/assets/images/icon/bg_logo.png");
+    height: 131px;
+    background-repeat: no-repeat;
+    z-index: 99;
+}
+.navgtionHead
+{
+border-top: solid #6b7dfa;
+}
+.inputBar
+{
+    margin-top: 14px;
+    text-align: center;
+}
+.searchInput
+{
+    border: none;
+    border-bottom: solid 1px;
+    text-align: center;
+    margin-left: 10px;
+    width: 46%;
+}
+.addBookBtn
+{
+    background-color: #16bdc0;
+    border-radius: 20px;
+    color: #6c898a;
+}
+.addBookBtn span{
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.addBookBtn:hover{
+background-color: #16e1e3;
+color: #6f6464;
+cursor: pointer;
+}

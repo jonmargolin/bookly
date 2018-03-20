@@ -1,0 +1,33 @@
+.bookContiner
+{
+    background: white;
+    padding-top: 20px;
+    padding-left: 11px;
+    font-size: 14px;
+}
+.bookContiner p{
+    margin-bottom: 5px;
+}
+.bookContiner p:first-child{
+    font-weight: 500;
+}
+.bookimg
+{
+    width: 100%;
+}
+.editBtn
+{
+    background-color: #16bdc0;
+    border-radius: 20px;
+    color: #6c898a;
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 12px;
+}
+.editBtn:hover
+{
+    background-color: #16e1e3;
+    color: #6f6464;
+    cursor: pointer;
+}
