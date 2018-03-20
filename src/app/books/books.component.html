@@ -1,5 +1,6 @@
 <div class="row bookcontiner">
-  <div class="col-md-2">
-  <app-book class="col-md-10"></app-book>
+  
+  <div *ngFor="let el of this.data" class="col-md-2">
+  <app-book [book]="el" class="col-md-10"></app-book>
   </div>
 </div>
