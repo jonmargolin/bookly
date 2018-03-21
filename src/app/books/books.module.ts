@@ -7,7 +7,7 @@ import { SidebarComponent } from './../sidebar/sidebar.component';
 import { BooksComponent } from './books.component';
 import { BookComponent } from './../book/book.component';
 import { DataService } from './../data-service/data.service';
-@NgModule({
+import { BooknamePipe } from './../book/bookname.pipe';@NgModule({
   imports: [
     CommonModule,
     AngularFontAwesomeModule
@@ -17,7 +17,8 @@ import { DataService } from './../data-service/data.service';
     NavgtionComponent,
     SidebarComponent,
     BooksComponent,
-    BookComponent
+    BookComponent,
+    BooknamePipe,
   ],
   providers: [
     DataService
