@@ -17,23 +17,38 @@ newName:string;
             {
               this.newName=this.newName+i;
             }
+            else{
+              this.newName=this.newName+this.upercase(i);
+                   }
+            
         }
         else{
-          console.log(i);
-        }
-      /* else{
-      let word = i.split('');
-      for (let n of word) {
-       if(path.test(n))
-        {
-          this.newName=this.newName+n;
-        }
-      }
-        }*/
+          let word="";
+          let w = i.split('');
+          for (let n of w) {
+           if(path.test(n))
+          {
+            word=word+n;
+          } 
+          }
+          if(wstart.test(word))
+            {
+              this.newName=this.newName+word;
+            }
+            else{
+       this.newName=this.newName+this.upercase(word);
+            }
+          }
       this.newName=this.newName+" ";
     }
-    console.log(this.newName);
     return this.newName;
   }
-
+  upercase(word)
+  { 
+    let c=word.charAt(0);
+   word=word.slice(1);
+    let up=c.toUpperCase();
+    word= up+word;
+    return word;
+  }
 }

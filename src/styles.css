@@ -4,3 +4,61 @@
 p{
     margin: 0px;
 }
+.modal-dialog {
+    max-width: 50%!important;
+  }
+.panel-body {
+    background:#7a76fa;
+
+}
+.nopading
+{
+    padding:0px;
+}
+.formHeder
+{
+    margin-left: 15px;
+}
+.formHeder img{
+    padding: 5px;
+}
+.fInput{
+display: block;
+}
+.fildeform
+{
+    display: inline;
+}
+.form-group
+{
+    margin-left: 46px
+}
+.has-error{
+   
+}
+.has-error input{
+    border: solid red 1px;
+}
+.has-error label{
+    color: red;
+}
+.alertmodle{
+    top:95px;
+}
+.alerthade{
+    background-color: #444444
+}
+.alartmsg{
+    background: #f1e7e7;
+    padding-top: 10px;
+    text-align: center;
+}
+.alartbtn{
+    padding-top: 12px;
+    padding-bottom: 20px;
+    /* margin: auto; */
+    margin: 0;
+}
+.alartbtn div{
+    margin: auto;
+}
