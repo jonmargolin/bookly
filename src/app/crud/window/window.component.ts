@@ -1,6 +1,7 @@
 import { Component, Input, ViewEncapsulation } from '@angular/core';
 import { NgbModal, ModalDismissReasons, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { EditComponent } from './../edit/edit.component'
+import {AddbookComponent } from './../../crud/addbook/addbook.component'
 @Component({
   selector: 'app-window',
   templateUrl: './window.component.html',

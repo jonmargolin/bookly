@@ -9,11 +9,14 @@ import { BooksComponent } from './books.component';
 import { BookComponent } from './../book/book.component';
 import { DataService } from './../data-service/data.service';
 import { BooksService } from './books.service';
-import { BooknamePipe } from './../book/bookname.pipe';@NgModule({
+import { BooknamePipe } from './../book/bookname.pipe';
+import { FormsModule } from '@angular/forms';
+@NgModule({
   imports: [
     CommonModule,
     AngularFontAwesomeModule,
-    CrudModule
+    CrudModule,
+    FormsModule
   ],
   declarations: [
     MainComponent,
@@ -22,6 +25,7 @@ import { BooknamePipe } from './../book/bookname.pipe';@NgModule({
     BooksComponent,
     BookComponent,
     BooknamePipe,
+
   ],
   providers: [
     DataService,

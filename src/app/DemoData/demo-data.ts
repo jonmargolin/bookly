@@ -8,18 +8,24 @@ export class DemoData implements InMemoryDbService {
             img:"assets/images/books/book1.png",
             name:"@@@fred the monster@@",
             author:"Robert Polad",
-            type:"kides",
-            typeId:1,
             date:"11/10/2016"
         },{
             id:2,
             img:"assets/images/books/book1.png",
-            name:"Fred The Monster",
-            author:"Robert Polad",
-            type:"kides",
-            typeId:1,
+            name:"Fredz Thez Monster",
+            author:"Roberto Polad",
+            
             date:"11/10/2016"
-        }]
+        },
+        {
+            id:3,
+            img:"assets/images/books/book1.png",
+            name:"My Book",
+            author:"Roberto Polad",
+            
+            date:"11/10/2016"
+        }
+    ]
         console.log();
     return {books};
     }

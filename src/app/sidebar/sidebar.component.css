@@ -13,5 +13,30 @@
     list-style: none
 }
 .navgitionbar ul li {
-    padding-bottom: 20px;
+    padding-bottom: 2px;
+    padding-left: 8px;
+    margin-bottom: 5px;
+}
+.addBookBtn
+{
+
+    background-color: #16bdc0;
+    border-radius: 20px;
+    color: #6c898a;
+}
+.addBookBtn span{
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.addBookBtn:hover{
+background-color: #16e1e3;
+color: #6f6464;
+cursor: pointer;
+}
+@media only screen and (max-width: 575px) {
+    .addBookBtn{
+        width: 33%;
+        text-align: center;
+        padding-left: 0px!important;
+    }
 }

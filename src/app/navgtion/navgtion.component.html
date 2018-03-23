@@ -5,11 +5,8 @@
 <div class="col-md-9">
   <div class="row inputBar">
   <div class="col-md-7">
-      <fa name="search"></fa>
-  <input class="searchInput" type="text" placeholder="Search your book"/>
-  </div>
-  <div class="col-md-2 addBookBtn"> 
- <span>Add a Book </span>
+      <fa name="search" (click)="Search()"></fa>
+  <input  [(ngModel)]="searchbook" class="searchInput" type="text" placeholder="Search your book"/>
   </div>
   </div>
 </div>

@@ -3,8 +3,6 @@ export interface Ibook{
     img: string;
     name:string;
     author:string;
-    type:string;
-    typeId:number;
     date:string;
    
 }

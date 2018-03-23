@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from './../data-service/data.service';
 import { Ibook} from './books';
 import {BooksService } from './books.service';
+import { SearchbookPipe } from './../books/searchbook.pipe';
 
 @Component({
   selector: 'app-books',

@@ -13,3 +13,11 @@
 .contant{
     background: #f7f7f7;
 }
+@media only screen and (max-width: 766px) {
+    
+    .navigationContiner
+    {
+        position: initial;
+    }
+       
+    }
