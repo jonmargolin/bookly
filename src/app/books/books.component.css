@@ -1,7 +1,8 @@
 .bookcontiner
 {
     margin-top: 60px;
-    margin-left: 60px;
+    margin-left: 20px;
+    margin-right: 40px;
 }
 @media only screen and (max-width: 766px) {
 

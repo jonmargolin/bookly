@@ -1,6 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-
+.mainc
+{
+overflow-x: hidden;
+padding:0px;
+}
 p{
     margin: 0px;
 }
@@ -34,7 +38,7 @@ display: block;
     margin-left: 46px
 }
 .has-error{
-   
+
 }
 .has-error input{
     border: solid red 1px;
@@ -61,4 +65,9 @@ display: block;
 }
 .alartbtn div{
     margin: auto;
+}
+@media only screen and (max-width: 1000px) {
+  .modal-dialog {
+    max-width: 90%!important;
+  }
 }

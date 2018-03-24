@@ -3,7 +3,7 @@
 }
 .contentHight
 {
-    height: 85.5vh;
+    height: 89.5vh;
     margin-top: 95px;
 }
 .navigationContiner
@@ -13,11 +13,15 @@
 .contant{
     background: #f7f7f7;
 }
+.booksare{
+  height: 89vh;
+  overflow-y: scroll;
+}
 @media only screen and (max-width: 766px) {
-    
+
     .navigationContiner
     {
         position: initial;
     }
-       
+
     }

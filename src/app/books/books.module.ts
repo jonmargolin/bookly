@@ -29,8 +29,9 @@ import { FormsModule } from '@angular/forms';
   ],
   providers: [
     DataService,
-    BooksService
+    BooksService,
+    BooknamePipe
   ],
-  exports:[MainComponent]
+  exports: [MainComponent]
 })
 export class BooksModule { }

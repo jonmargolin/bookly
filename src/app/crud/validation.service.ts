@@ -1,15 +1,17 @@
+/* validtion service for all  notifing on error  to the user */
+
 import { Injectable } from '@angular/core';
-import { AbstractControl } from "@angular/forms/src/model";
-import { BooksService } from "./../books/books.service";
+import { AbstractControl } from '@angular/forms/src/model';
+import { BooksService } from './../books/books.service';
 @Injectable()
 export class ValidationService {
-
+  t: any;
   bookNameMessage: string;
   private NamevalidationMessages = {
     required: 'Please enter the book name.',
     pattern: 'Please enter a valid name',
     minlength: 'Please enter at least 4 characters.',
-    name: 'this name ia all ready exsist'
+    name: 'this name is all ready exist'
   };
   private AuthorvalidationMessages = {
     required: 'Please enter the book author.',
@@ -21,16 +23,13 @@ export class ValidationService {
     pattern: 'Please enter a valid date',
   };
   constructor( private bs: BooksService) { }
-  gebooks()
-  {
+  gebooks(){
     return this.bs.getbook;
   }
-validname (c: AbstractControl): {[key: string]: boolean} | null
-{
-  let bn=c.get('name');
-  
-  if(bn.pristine)
-    {
+validname (c: AbstractControl): {[key: string]: boolean} | null {
+  const bn = c.get('name');
+
+  if (bn.pristine) {
       return null;
     }
 
@@ -38,36 +37,33 @@ validname (c: AbstractControl): {[key: string]: boolean} | null
 
 }
   setMessage(c: AbstractControl, type) {
-     let t    
+
      if ((c.touched || c.dirty) && c.errors) {
- t= Object.keys(c.errors)
-       switch(type){
-       case "name":
-       if(t){
-           this.bookNameMessage = t.map(key =>
+ this.t = Object.keys(c.errors);
+       switch (type) {
+       case 'name':
+       if (this.t) {
+           this.bookNameMessage = this.t.map(key =>
              this.NamevalidationMessages[key]).join(' ');
              return this.bookNameMessage;
+       } else {
+         return this.bookNameMessage = null;
        }
-       else{
-         return this.bookNameMessage=null
-       }
-    case "author":
-    if(t){
-    this.bookNameMessage = t.map(key =>
+    case 'author':
+    if (this.t) {
+    this.bookNameMessage = this.t.map(key =>
       this.AuthorvalidationMessages[key]).join(' ');
       return this.bookNameMessage;
-    }
-      else{
-        return this.bookNameMessage=null
+    } else {
+        return this.bookNameMessage = null;
       }
-      case "date":
-      if(t){
-      this.bookNameMessage = t.map(key =>
+      case 'date':
+      if (this.t) {
+      this.bookNameMessage = this.t.map(key =>
         this.datevalidationMessages[key]).join(' ');
         return this.bookNameMessage;
-      }
-        else{
-          return this.bookNameMessage=null
+      } else {
+          return this.bookNameMessage = null;
         }
      }
   }

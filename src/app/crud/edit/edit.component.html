@@ -1,5 +1,5 @@
 
-   
+
 
   <div  class="col-md-12 nopading">
     <div class="panel-body">
@@ -15,14 +15,14 @@
           [formGroup]=" BookForm">
               <fieldset>
                   <div class="form-group"  [ngClass]="{'has-error':bookNameMessage  }" >
-                      <label class="col-md-3 control-label" 
+                      <label class="col-md-3 control-label"
                       for="BookNameId">Book Name</label>
 
                <div class="col-md-8">
-                   <input class="form-control" 
-                          id="BookNameId" 
-                          type="text" 
-                          placeholder="Book Name (required)" 
+                   <input class="form-control"
+                          id="BookNameId"
+                          type="text"
+                          placeholder="Book Name (required)"
                           formControlName="name" />
                           <span class="help-block" *ngIf="bookNameMessage">
                               {{ bookNameMessage }}
@@ -30,13 +30,13 @@
                </div>
                   </div>
                   <div class="form-group" [ngClass]="{'has-error': bookAuthorMessage  }">
-                      <label class="col-md-3 control-label" 
+                      <label class="col-md-3 control-label"
                       for="BookAutorId">Book Autor</label>
                <div class="col-md-8">
-                   <input class="form-control" 
-                          id="BookAutorId" 
-                          type="text" 
-                          placeholder="Book Autor (required)" 
+                   <input class="form-control"
+                          id="BookAutorId"
+                          type="text"
+                          placeholder="Book Autor (required)"
                           formControlName="author" />
                           <span class="help-block" *ngIf="bookAuthorMessage">
                                 {{ bookAuthorMessage }}
@@ -44,19 +44,19 @@
                </div>
                   </div>
                   <div class="form-group" [ngClass]="{'has-error': dateMessage  }">
-                      <label class="col-md-3 control-label" 
+                      <label class="col-md-3 control-label"
                       for="BookDateId">Book Date</label>
 
                <div class="col-md-8">
-                   <input class="form-control" 
-                          id="BookDateId" 
-                          type="date" 
-                          placeholder="Book Date (required)" 
+                   <input class="form-control"
+                          id="BookDateId"
+                          type="text"
+                          placeholder="Book Date (required)"
                           formControlName="date" />
                           <span class="help-block" *ngIf="dateMessage">
                                 {{ dateMessage }}
                             </span>
-                
+
                </div>
                   </div>
                   <div class="form-group">
@@ -80,8 +80,8 @@
                   </div>
               </fieldset>
             </form>
-    
-      </div>
-  
 
-        
+      </div>
+
+
+

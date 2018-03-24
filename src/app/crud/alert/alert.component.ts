@@ -1,5 +1,6 @@
+/** the modla alert component */
 import { OnInit, Component } from '@angular/core';
-import {AlertService } from './alert.service'
+import {AlertService } from './alert.service';
 import { NgbModal, ModalDismissReasons, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 @Component({
   selector: 'app-alert',
@@ -10,14 +11,13 @@ import { NgbModal, ModalDismissReasons, NgbActiveModal } from '@ng-bootstrap/ng-
 export class AlertComponent implements OnInit {
 
   constructor( private as: AlertService, public activeModal: NgbActiveModal) { }
-  ngOnInit():void {
- 
+  ngOnInit(): void {
+
   }
-cancel()
-{
+cancel() {
   this.activeModal.close();
 }
-  delete(){
-    this.as.delete()
+  delete() {
+    this.as.delete();
   }
 }

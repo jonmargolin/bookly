@@ -1,3 +1,4 @@
+/** side bar component  */
 import { Component, OnInit } from '@angular/core';
 import { CrudModule } from './../crud/crud.module';
 import { WindowComponent } from './../crud/window/window.component';
@@ -10,14 +11,14 @@ import { BooksService } from './../books/books.service';
 })
 export class SidebarComponent implements OnInit {
 
-  constructor(private windo:WindowComponent,private bs: BooksService) { }
+  constructor(private windo: WindowComponent, private bs: BooksService) { }
 
   ngOnInit() {
   }
-addbook(){
-  this.windo.oc(AddbookComponent,null);
+addbook() {
+  this.windo.oc(AddbookComponent, null);
 }
-allBook(){
+allBook() {
 this.bs.allBook();
 }
 }

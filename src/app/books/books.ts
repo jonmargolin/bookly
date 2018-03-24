@@ -1,8 +1,8 @@
-export interface Ibook{
-    id:number;
+export interface Ibook {
+    id: number;
     img: string;
-    name:string;
-    author:string;
-    date:string;
-   
+    name: string;
+    author: string;
+    date: string;
+
 }

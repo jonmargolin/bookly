@@ -3,9 +3,9 @@
       <button type="button" class="close" aria-label="Close" (click)=" this.activeModal.dismiss('Cross click')">
           <span aria-hidden="true">&times;</span>
         </button>
-        
+
         <div class="formHeder">
-           
+
         <img src="assets/images/icon/logo_bookly.png">
         <span class="formtitle">
             Add New Book
@@ -17,14 +17,14 @@
           [formGroup]=" BookForm">
               <fieldset>
                   <div class="form-group"  [ngClass]="{'has-error':bookNameMessage  }" >
-                      <label class="col-md-3 control-label" 
+                      <label class="col-md-3 control-label"
                       for="BookNameId">Book Name</label>
 
                <div class="col-md-8">
-                   <input class="form-control" 
-                          id="BookNameId" 
-                          type="text" 
-                          placeholder="Book Name (required)" 
+                   <input class="form-control"
+                          id="BookNameId"
+                          type="text"
+                          placeholder="Book Name (required)"
                           formControlName="name" />
                           <span class="help-block" *ngIf="bookNameMessage">
                               {{ bookNameMessage }}
@@ -32,14 +32,14 @@
                </div>
                   </div>
                   <div class="form-group" [ngClass]="{'has-error': bookAuthorMessage  }">
-                      <label class="col-md-3 control-label" 
+                      <label class="col-md-3 control-label"
                       for="BookAutorId">Book Autor</label>
 
                <div class="col-md-8">
-                   <input class="form-control" 
-                          id="BookAutorId" 
-                          type="text" 
-                          placeholder="Book Autor (required)" 
+                   <input class="form-control"
+                          id="BookAutorId"
+                          type="text"
+                          placeholder="Book Autor (required)"
                           formControlName="author" />
                           <span class="help-block" *ngIf="bookAuthorMessage">
                                 {{ bookAuthorMessage }}
@@ -47,14 +47,14 @@
                </div>
                   </div>
                   <div class="form-group" [ngClass]="{'has-error': dateMessage  }">
-                      <label class="col-md-3 control-label" 
+                      <label class="col-md-3 control-label"
                       for="BookDateId">Book Date</label>
 
                <div class="col-md-8">
-                   <input class="form-control" 
-                          id="BookDateId" 
-                          type="date" 
-                          placeholder="Book Date (required)" 
+                   <input class="form-control"
+                          id="BookDateId"
+                          type="text"
+                          placeholder="Book Date (required)"
                           formControlName="date" />
                           <span class="help-block" *ngIf="dateMessage">
                                 {{ dateMessage }}
@@ -62,17 +62,17 @@
                </div>
                   </div>
                   <div class="form-group">
-                      <label class="col-md-3 control-label" 
+                      <label class="col-md-3 control-label"
                       for="BookDateId">Book image </label>
 
                <div class="col-md-8">
                  <div class="row">
                  <div class="col-md-8">
-                   <input class="form-control" 
-                          id="BookDateId" 
-                          type="file" 
-                          placeholder="Book image " 
-                          formControlName="img" 
+                   <input class="form-control"
+                          id="BookDateId"
+                          type="file"
+                          placeholder="Book image "
+                          formControlName="img"
                           (change)="handleFileSelect($event)"
                           />
                  </div>
@@ -103,5 +103,5 @@
                   </div>
               </fieldset>
             </form>
-    
+
       </div>
