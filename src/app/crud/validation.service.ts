@@ -20,10 +20,10 @@ export class ValidationService {
   };
   private datevalidationMessages = {
     required: 'Please enter the book date.',
-    pattern: 'Please enter a valid date',
+    pattern: 'Please enter a valid date in a formate dd/mm/yyyy',
   };
   constructor( private bs: BooksService) { }
-  gebooks(){
+  gebooks() {
     return this.bs.getbook;
   }
 validname (c: AbstractControl): {[key: string]: boolean} | null {
